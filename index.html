@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Module 01 Buổi sáng 120 phút</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1  Cách 1 : 
+        // function hopNhatVaSapXepMang(list1, list2) {
+        //     let newArr = list1.concat(list2);
+        //     let mangDaSapXep = newArr.sort((a, b) => a - b);
+        //     return mangDaSapXep;
+        // }
+
+        // let list1 = [1, 2, 4, 5, 8, 10, 11];
+        // let list2 = [1, 3, 4, 6, 9, 80, 5];
+        // let result = hopNhatVaSapXepMang(list1, list2);
+        // console.log(result);
+
+        // //    Bài 1 Cách 2 :
+        // function hopNhatVaSapXepMang(list1, list2) {
+        //     let newArr = list1.concat(list2);
+        //     for (let i = 0; i < newArr.length - 1; i++) {
+        //         for (let j = 0; j < newArr.length - i; j++) {
+        //             if (newArr[j] > newArr[j + 1]) {
+        //                 let temp = newArr[j];
+        //                 newArr[j] = newArr[j + 1];
+        //                 newArr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+
+        //     return newArr;
+        // }
+
+        // let list1 = [1, 2, 4, 5, 9, 8, 10, 11, 80];
+        // let list2 = [1, 3, 4, 6, 9, 5];
+        // let result = hopNhatVaSapXepMang(list1, list2);
+        // console.log(result);
+
+
+
+        // Bài 2
+        // function timViTriCacPhanTuCoTong(nums, target) {
+        //     let obj = {};
+
+        //     for (let i = 0; i < nums.length; i++) {
+        //         let phanTuHienTai = nums[i];
+        //         let phanTuCanTim = target - phanTuHienTai;
+
+        //         for (let j = i + 1; j < nums.length; j++) {
+        //             if (nums[j] === phanTuCanTim) {
+        //                 return [i, j];
+        //             }
+        //         }
+        //     }
+
+        //     return [];
+        // }
+
+        // let nums = [9, 2, 5, 0, 11, 15];
+        // let target = 9;
+        // let ketQua = timViTriCacPhanTuCoTong(nums, target);
+        // console.log(ketQua);
+
+
+        // Bài 3
+        // function timTienToChung(strs) {
+        //     if (strs.length === 0) {
+        //         return "";
+        //     }
+
+        //     let tienToChung = "";
+
+        //     for (let i = 0; i < strs[0].length; i++) {
+        //         let kiTuDauTien = strs[0][i];
+
+        //         for (let j = 1; j < strs.length; j++) {
+        //             if (i >= strs[j].length || strs[j][i] !== kiTuDauTien) {
+        //                 return tienToChung;
+        //             }
+        //         }
+
+        //         tienToChung += kiTuDauTien;
+        //     }
+
+        //     return tienToChung;
+        // }
+
+        // let strs = ["fflowelhbf", "fflwlsdhbf", "ffloighthbfo"];
+        // let tienToChung = timTienToChung(strs);
+        // if (tienToChung === "") {
+        //     console.log("Không có tiền tố nào chung cả");
+        // } else {
+        //     console.log(tienToChung);
+        // }
+
+    </script>
+</body>
+
+</html>
